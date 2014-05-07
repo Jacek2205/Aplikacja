@@ -53,6 +53,16 @@ import com.greensock.*;
 			touchList.x = -552;
 			
 			
+			main.jeden.alpha = 0;
+			main.dwa.alpha = 0;
+			main.trzy.alpha = 0;
+			main.cztery.alpha = 0;
+			main.piec.alpha = 0;
+			main.szesc.alpha = 0;
+			main.siedem.alpha = 0;
+			main.osiem.alpha = 0;
+			
+			
 			
 			
 				var item0:TouchListItemRenderer = new TouchListItemRenderer();
@@ -82,7 +92,7 @@ import com.greensock.*;
 					
 					var item4:TouchListItemRenderer = new TouchListItemRenderer();
 					item4.index = 4;
-					item4.data = "Środowiski";// 
+					item4.data = "Środowisko";// 
 					item4.itemHeight = 95;
 					touchList.addListItem(item4);
 					
@@ -116,14 +126,42 @@ import com.greensock.*;
 					item9.itemHeight = 95;
 					touchList.addListItem(item9);
 					
+					var item10:TouchListItemRenderer = new TouchListItemRenderer();
+					item10.index = 10;
+					item10.data = "Kontakt";// 
+					item10.itemHeight = 95;
+					touchList.addListItem(item10);
+					
 					main.bar.addEventListener(MouseEvent.CLICK, menu);
 					touchList.addEventListener(ListItemEvent.ITEM_SELECTED, listItemSelected);
 					map.back2.addEventListener(MouseEvent.CLICK, mapBack);
+					
+					_alpha();
 
 
 			
 		}
 		
+		
+		public function _alpha():void {
+			
+			TweenLite.to(main.jeden, 1, { alpha:1, delay:0.5 } );
+			TweenLite.to(main.osiem, 1, { alpha:1, delay:0.7 } );
+			TweenLite.to(main.dwa, 1, { alpha:1, delay:0.9 } );
+			TweenLite.to(main.trzy, 1, { alpha:1, delay:1.2 } );
+			TweenLite.to(main.cztery, 1, { alpha:1, delay:1.5 } );//
+			TweenLite.to(main.piec, 1, { alpha:1, delay:1.7 } );
+			TweenLite.to(main.szesc, 1, { alpha:1, delay:1.7 } );
+			TweenLite.to(main.siedem, 1, { alpha:1, delay:1.7 } );
+			
+
+
+			
+
+
+
+			
+		}
 		
 		// open screeeeen
 		public function  listItemSelected(e:ListItemEvent):void
@@ -148,6 +186,63 @@ import com.greensock.*;
 
 			}
 			
+			if (e.renderer.index == 2){
+				
+				  //TweenLite.to(map, .3, {x:0}); //88
+				  //TweenLite.to(main, .3, {x:0}); //88
+                  //TweenLite.to(touchList, .3, {x:-552});
+                  //boo = false;
+				  
+
+			}
+			
+			if (e.renderer.index == 3){
+				
+				  //TweenLite.to(map, .3, {x:0}); //88
+				  //TweenLite.to(main, .3, {x:0}); //88
+                  //TweenLite.to(touchList, .3, {x:-552});
+                  //boo = false;
+				  
+
+			}
+			
+			if (e.renderer.index == 4){
+				
+				  //TweenLite.to(map, .3, {x:0}); //88
+				  //TweenLite.to(main, .3, {x:0}); //88
+                  //TweenLite.to(touchList, .3, {x:-552});
+                  //boo = false;
+				  
+
+			}
+			if (e.renderer.index == 5){
+				
+				  //TweenLite.to(map, .3, {x:0}); //88
+				  //TweenLite.to(main, .3, {x:0}); //88
+                  //TweenLite.to(touchList, .3, {x:-552});
+                  //boo = false;
+				  
+
+			}
+			if (e.renderer.index == 6){
+				
+				  //TweenLite.to(map, .3, {x:0}); //88
+				  //TweenLite.to(main, .3, {x:0}); //88
+                  //TweenLite.to(touchList, .3, {x:-552});
+                  //boo = false;
+				  
+
+			}
+			if (e.renderer.index == 7){
+				
+				  //TweenLite.to(map, .3, {x:0}); //88
+				  //TweenLite.to(main, .3, {x:0}); //88
+                  //TweenLite.to(touchList, .3, {x:-552});
+                  //boo = false;
+				  
+
+			}
+			
 		}
 		
 		
@@ -155,7 +250,7 @@ import com.greensock.*;
 
  public function mapBack(event:MouseEvent):void{
 	
-	//map.jj();
+	
 	                map.clearr();
 				    TweenLite.to(map, .3, {x:640}); //88
 				//TweenLite.to(main, .3, {x:0}); //88

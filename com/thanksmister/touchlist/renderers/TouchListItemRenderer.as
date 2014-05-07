@@ -123,15 +123,15 @@ package com.thanksmister.touchlist.renderers
 		{
 			if(!textField) {
 				
-				var myHeadingFont:Font = new Font1()
-                var myHeadingFormat:TextFormat = new TextFormat(myHeadingFont.fontName,20,0xEAEAEA)
+				var myHeadingFont:Font = new Font2()
+                var myHeadingFormat:TextFormat = new TextFormat(myHeadingFont.fontName,30,0xEAEAEA)
                 //myHeadingField.defaultTextFormat = myHeadingFormat;
 
 				    var textFormat:TextFormat = new TextFormat();
 					textFormat.color = 0xEAEAEA;
-					textFormat.size = 32;
+					textFormat.size = 35;
 					//textFormat.font = "DroidSans";
-					Font.registerFont(Font1);
+					Font.registerFont(Font2);
 
 					//textFormat.font = Font1;
 	
