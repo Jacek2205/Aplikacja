@@ -104,7 +104,7 @@ import com.greensock.*;
 					
 					var item6:TouchListItemRenderer = new TouchListItemRenderer();
 					item6.index = 6;
-					item6.data = "Władze";// 
+					item6.data = "Władze Miasta";// 
 					item6.itemHeight = 95;
 					touchList.addListItem(item6);
 					
@@ -135,6 +135,19 @@ import com.greensock.*;
 					main.bar.addEventListener(MouseEvent.CLICK, menu);
 					touchList.addEventListener(ListItemEvent.ITEM_SELECTED, listItemSelected);
 					map.back2.addEventListener(MouseEvent.CLICK, mapBack);
+					wiadomosci.back2.addEventListener(MouseEvent.CLICK, wiadomosciBack);
+				    sport.back2.addEventListener(MouseEvent.CLICK, sportBack);
+					ratusz.back2.addEventListener(MouseEvent.CLICK, ratuszBack);
+					srodowisko.back2.addEventListener(MouseEvent.CLICK, srodowiskoBack);
+					firma.back2.addEventListener(MouseEvent.CLICK, firmaBack);//
+					wladza.back2.addEventListener(MouseEvent.CLICK, wladzaBack);
+					status.back2.addEventListener(MouseEvent.CLICK, statusBack);
+					praca.back2.addEventListener(MouseEvent.CLICK, pracaBack);
+					kontakt.back2.addEventListener(MouseEvent.CLICK, kontaktBack);
+
+
+
+					
 					
 					_alpha();
 
@@ -166,61 +179,76 @@ import com.greensock.*;
 		// open screeeeen
 		public function  listItemSelected(e:ListItemEvent):void
 		{
-			if(e.renderer.index == 1){
+			if(e.renderer.index == 0){
 				
-				//TweenLite.to(kk, .3, {x:0}); //88
-				//TweenLite.to(main, .3, {x:0}); //88
-                //TweenLite.to(touchList, .3, {x:-552});
-                //boo = false;
+				TweenLite.to(wiadomosci, .3, {x:0}); //88
+				TweenLite.to(main, .3, {x:0}); //88
+                TweenLite.to(touchList, .3, {x:-552});
+                boo = false;
+				maska.visible = false;
+
 				trace("1");
 
 			}
 			
-			if (e.renderer.index == 0){
+			if (e.renderer.index == 1){
 				
-				  TweenLite.to(map, .3, {x:0}); //88
+				  TweenLite.to(sport, .3, {x:0}); //88
 				  TweenLite.to(main, .3, {x:0}); //88
                   TweenLite.to(touchList, .3, {x:-552});
                   boo = false;
-				  map.jj();
+				  maska.visible = false;
+
+				  //map.jj();
 
 			}
 			
 			if (e.renderer.index == 2){
 				
-				  //TweenLite.to(map, .3, {x:0}); //88
-				  //TweenLite.to(main, .3, {x:0}); //88
-                  //TweenLite.to(touchList, .3, {x:-552});
-                  //boo = false;
+				  TweenLite.to(ratusz, .3, {x:0}); //88
+				  TweenLite.to(main, .3, {x:0}); //88
+                  TweenLite.to(touchList, .3, { x: -552 } );
+				  maska.visible = false;
+
+                  boo = false;
 				  
 
 			}
 			
 			if (e.renderer.index == 3){
 				
-				  //TweenLite.to(map, .3, {x:0}); //88
-				  //TweenLite.to(main, .3, {x:0}); //88
-                  //TweenLite.to(touchList, .3, {x:-552});
-                  //boo = false;
+				  TweenLite.to(map, .3, {x:0}); //88
+				  TweenLite.to(main, .3, {x:0}); //88
+                  TweenLite.to(touchList, .3, {x:-552});
+                  boo = false;
+				  maska.visible = false;
+
+				  
+				  map.jj();
 				  
 
 			}
 			
 			if (e.renderer.index == 4){
 				
-				  //TweenLite.to(map, .3, {x:0}); //88
-				  //TweenLite.to(main, .3, {x:0}); //88
-                  //TweenLite.to(touchList, .3, {x:-552});
-                  //boo = false;
+				  TweenLite.to(srodowisko, .3, {x:0}); //88
+				  TweenLite.to(main, .3, {x:0}); //88
+                  TweenLite.to(touchList, .3, {x:-552});
+                  boo = false;
+				  maska.visible = false;
+
+				  
 				  
 
 			}
 			if (e.renderer.index == 5){
 				
-				  //TweenLite.to(map, .3, {x:0}); //88
-				  //TweenLite.to(main, .3, {x:0}); //88
-                  //TweenLite.to(touchList, .3, {x:-552});
-                  //boo = false;
+				  TweenLite.to(firma, .3, {x:0}); //88
+				  TweenLite.to(main, .3, {x:0}); //88
+                  TweenLite.to(touchList, .3, {x:-552});
+                  boo = false;
+				  maska.visible = false;
+
 				  
 
 			}
@@ -253,6 +281,115 @@ import com.greensock.*;
 	
 	                map.clearr();
 				    TweenLite.to(map, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+
+public function wiadomosciBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(wiadomosci, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+public function sportBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(sport, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+public function ratuszBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(ratusz, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+public function srodowiskoBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(srodowisko, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+public function firmaBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(firma, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+public function wladzaBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(wladza, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+public function statusBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(status, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+public function pracaBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(praca, .3, {x:640}); //88
+				//TweenLite.to(main, .3, {x:0}); //88
+                //TweenLite.to(touchList, .3, {x:-552});
+                //boo = false;
+				
+				
+}
+
+public function kontaktBack(event:MouseEvent):void{
+	
+	
+	                
+				  TweenLite.to(kontakt, .3, {x:640}); //88
 				//TweenLite.to(main, .3, {x:0}); //88
                 //TweenLite.to(touchList, .3, {x:-552});
                 //boo = false;
