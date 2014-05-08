@@ -155,7 +155,7 @@ package com.thanksmister.touchlist.renderers
 		{
 			if(!initialized) return 
 				
-			textField.x = 5;
+			textField.x = 15;
 			textField.text = String(data);
 			textField.height = textField.textHeight;
 			textField.width = itemWidth - 10;
