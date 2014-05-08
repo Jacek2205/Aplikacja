@@ -57,8 +57,8 @@ import com.greensock.*;
 			main.dwa.alpha = 0;
 			main.trzy.alpha = 0;
 			main.cztery.alpha = 0;
-			main.piec.alpha = 0;
-			main.szesc.alpha = 0;
+			//main.piec.alpha = 0;
+			//main.szesc.alpha = 0;
 			main.siedem.alpha = 0;
 			main.osiem.alpha = 0;
 			
@@ -144,7 +144,13 @@ import com.greensock.*;
 					status.back2.addEventListener(MouseEvent.CLICK, statusBack);
 					praca.back2.addEventListener(MouseEvent.CLICK, pracaBack);
 					kontakt.back2.addEventListener(MouseEvent.CLICK, kontaktBack);
-
+					
+					///main screen
+					main.cztery.addEventListener(MouseEvent.CLICK, _wiadomosci);
+					main.osiem.addEventListener(MouseEvent.CLICK, _mapy);
+					main.trzy.addEventListener(MouseEvent.CLICK, _sport);
+					main.siedem.addEventListener(MouseEvent.CLICK, _ratusz);
+					main.dwa.addEventListener(MouseEvent.CLICK, _status);
 
 
 					
@@ -163,8 +169,8 @@ import com.greensock.*;
 			TweenLite.to(main.dwa, 1, { alpha:1, delay:0.9 } );
 			TweenLite.to(main.trzy, 1, { alpha:1, delay:1.2 } );
 			TweenLite.to(main.cztery, 1, { alpha:1, delay:1.5 } );//
-			TweenLite.to(main.piec, 1, { alpha:1, delay:1.7 } );
-			TweenLite.to(main.szesc, 1, { alpha:1, delay:1.7 } );
+			//TweenLite.to(main.piec, 1, { alpha:1, delay:1.7 } );
+			//TweenLite.to(main.szesc, 1, { alpha:1, delay:1.7 } );
 			TweenLite.to(main.siedem, 1, { alpha:1, delay:1.7 } );
 			
 
@@ -395,6 +401,42 @@ public function kontaktBack(event:MouseEvent):void{
                 //boo = false;
 				
 				
+}
+
+
+/////////////////////////////////
+public function _wiadomosci(event:MouseEvent):void {
+	
+					  TweenLite.to(wiadomosci, .3, {x:0}); //88
+					  trace("ddddd");
+}
+
+public function _mapy(event:MouseEvent):void {
+	
+					  TweenLite.to(map, .3, { x:0 } ); //88
+					  map.jj();
+					  trace("ddddd");
+}
+
+public function _sport(event:MouseEvent):void {
+	
+					  TweenLite.to(sport, .3, { x:0 } ); //88
+					  
+					  trace("ddddd");
+}
+
+public function _ratusz(event:MouseEvent):void {
+	
+					  TweenLite.to(ratusz, .3, { x:0 } ); //88
+					  
+					  trace("ddddd");
+}
+
+public function _status(event:MouseEvent):void {
+	
+					  TweenLite.to(status, .3, { x:0 } ); //88
+					  
+					  trace("ddddd");
 }
 		
 		
